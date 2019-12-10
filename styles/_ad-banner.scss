@@ -1,0 +1,47 @@
+.ad-banner {
+    background-color: $ad-banner-color; 
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+
+    &__text {
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px; 
+        line-height: 30px;
+        letter-spacing: 1px;
+    }
+
+    &__select {
+        display: none; 
+    }
+}
+
+@media only screen and (min-width: $min-screen-width) {
+    .ad-banner {
+        &__select {
+            display: block; 
+            position: absolute;
+            top: 6px;  
+            right: 50px; 
+            width: 45px; 
+            cursor: pointer;
+            font-weight: 900;
+            appearance: none;
+            outline: 0; 
+            box-shadow: none;
+            border: 0!important; 
+
+            background-image: url('../imgs/arrowdown.svg');
+            background-repeat: no-repeat;
+            background-position: right 3px top 50%;
+            background-size: 10px 10px;
+            background-color: transparent;
+
+            font-family: 'Roboto', sans-serif;
+            font-size: 13px; 
+            line-height: 20px;
+            letter-spacing: 1px;
+        }
+    }
+}

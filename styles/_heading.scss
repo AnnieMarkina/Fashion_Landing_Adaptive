@@ -1,0 +1,131 @@
+.heading { 
+    height: 85px;
+
+    &__menu-left {
+        display: none;
+    }
+
+    &__menu-right {
+        display: none;
+    }
+
+    &__wrapper {
+        width: 95%;
+        margin: 0 auto; 
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo-icon {
+        font-family: 'PT Sans', sans-serif;
+        letter-spacing: 5px;  
+        font-size: 16px;
+        margin-top: 10px;
+
+        a {
+            text-decoration: none; 
+            font-family: 'Roboto', sans-serif;
+            color: black;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 14px; 
+            margin-top: 10px;
+            letter-spacing: 2px; 
+        }
+    }
+}
+
+.heading img {
+    height: 25px;
+    widows: 25px;
+    margin-top: 30px;
+}
+
+@media only screen and (min-width: $medium-screen-width) {
+    .heading {
+        &__menu-left { 
+            width: 30%;
+            display: flex; 
+            justify-content: space-between;
+            align-items: center;
+            // border: 1px solid pink; 
+        }
+
+        &__menu-right {
+            width: 25%;
+            display: flex; 
+            justify-content: space-between;
+            align-items: center;
+            
+            a {
+                &:nth-child(1) {
+
+                    &::before {
+                        content: '\00a0 \00a0 \00a0 \00a0 \00a0';
+                        background-image: url('../imgs/search.svg');
+                        background-repeat: no-repeat;
+                        background-color: transparent;
+                        background-size: 15px 15px;
+                        background-position: left;
+                    }
+             }
+
+            &:last-child {
+
+                &::before {
+                    content: '\00a0 \00a0 \00a0 \00a0 \00a0';
+                    background-image: url('../imgs/cart.svg');
+                    background-repeat: no-repeat;
+                    background-color: transparent;
+                    background-size: 15px 15px;
+                    background-position: left;
+                }
+
+                &::after {
+                    content: '\00a0 \00a0 \00a0 \00a0';
+                    background-image: url('../imgs/circle.svg');
+                    background-repeat: no-repeat;
+                    background-color: transparent;
+                    background-size: 16px 16px;
+                    background-position: right;
+                    background-position: top 4px; 
+                }
+            }
+            }
+        }
+
+        a {
+            text-decoration: none; 
+            font-family: 'Roboto', sans-serif;
+            color: black;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 14px; 
+            margin-top: 10px;
+            letter-spacing: 2px; 
+
+            &:hover {
+                color: #904614; 
+                font-weight: 900;
+                transition: color 0.5s;
+                transition: font-weight 0.3s; 
+            }
+        }
+
+        &__account-icon {
+            display: none; 
+        }
+
+        &__cart-icon {
+            display: none; 
+        }
+
+        &__menu-icon {
+            display: none; 
+        }
+
+        &__search-icon {
+            display: none; 
+        }
+    }
+}
