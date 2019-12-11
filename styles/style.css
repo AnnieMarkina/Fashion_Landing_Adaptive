@@ -189,6 +189,104 @@
   margin: 0 auto;
 }
 
+.carousel__wrapper--card {
+  position: relative;
+  width: 100%;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.89);
+  margin: -3px 0 0 0;
+  padding-top: 30px;
+  padding-left: 55px;
+  height: 350px;
+}
+
+.carousel__wrapper--card p {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: 3px;
+}
+
+.carousel__wrapper--card h2 {
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+}
+
+.carousel__wrapper--card #first-h2 {
+  font-family: 'Playfair Display', serif;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  font-size: 38px;
+}
+
+.carousel__wrapper--card #second-h2 {
+  font-family: 'PT Sans', sans-serif;
+  font-style: italic;
+  margin-top: -20px;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+.carousel__wrapper--card a {
+  text-decoration: none;
+}
+
+.carousel__wrapper--card a p {
+  color: rgba(255, 255, 255, 0.89);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
+}
+
+.carousel__wrapper--card a p:hover {
+  color: #904614;
+  font-weight: 900;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  -webkit-transition: font-weight 0.3s;
+  transition: font-weight 0.3s;
+}
+
+.carousel__wrapper--card button {
+  margin-top: 30px;
+  padding: 25px 95px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.89);
+}
+
+.carousel__wrapper--card button:hover {
+  border: 2px solid #904614;
+  -webkit-transition: border 0.3s;
+  transition: border 0.3s;
+}
+
+.carousel__wrapper--card button a {
+  text-decoration: none;
+}
+
+.carousel__wrapper--card button a p {
+  margin: 0;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.89);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
+}
+
+.carousel__wrapper--card button a p:hover {
+  color: #904614;
+  font-weight: 900;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  -webkit-transition: font-weight 0.3s;
+  transition: font-weight 0.3s;
+}
+
 .carousel__track-container {
   height: 500px;
   overflow: hidden;
@@ -275,119 +373,21 @@
   transition: color 0.8s;
 }
 
-.carousel__card {
-  width: 90%;
-  background-color: black;
-  color: rgba(255, 255, 255, 0.89);
-  margin: -3px 0 0 0;
-  padding-top: 30px;
-  padding-left: 55px;
-  height: 350px;
-}
-
-.carousel__card p {
-  text-transform: uppercase;
-  font-size: 12px;
-  font-family: 'Roboto Slab', serif;
-  letter-spacing: 3px;
-}
-
-.carousel__card h2 {
-  text-transform: uppercase;
-  font-family: 'Roboto Slab', serif;
-}
-
-.carousel__card #first-h2 {
-  font-family: 'Playfair Display', serif;
-  margin-top: 10px;
-  letter-spacing: 2px;
-  font-size: 38px;
-}
-
-.carousel__card #second-h2 {
-  font-family: 'PT Sans', sans-serif;
-  font-style: italic;
-  margin-top: -20px;
-  letter-spacing: 2px;
-  font-size: 30px;
-}
-
-.carousel__card a {
-  text-decoration: none;
-}
-
-.carousel__card a p {
-  color: rgba(255, 255, 255, 0.89);
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  font-size: 17px;
-  font-weight: 100;
-  font-family: 'Roboto', sans-serif;
-}
-
-.carousel__card a p:hover {
-  color: #904614;
-  font-weight: 900;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
-  -webkit-transition: font-weight 0.3s;
-  transition: font-weight 0.3s;
-}
-
-.carousel__card button {
-  margin-top: 30px;
-  padding: 25px 95px;
-  cursor: pointer;
-  background-color: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.89);
-}
-
-.carousel__card button:hover {
-  border: 2px solid #904614;
-  -webkit-transition: border 0.3s;
-  transition: border 0.3s;
-}
-
-.carousel__card button a {
-  text-decoration: none;
-}
-
-.carousel__card button a p {
-  margin: 0;
-  padding: 0;
-  color: rgba(255, 255, 255, 0.89);
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  font-size: 15px;
-  font-weight: 100;
-  font-family: 'Roboto', sans-serif;
-}
-
-.carousel__card button a p:hover {
-  color: #904614;
-  font-weight: 900;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
-  -webkit-transition: font-weight 0.3s;
-  transition: font-weight 0.3s;
-}
-
 .current-slide {
   background: #d4bc87;
 }
 
 @media only screen and (min-width: 700px) {
-  .carousel__card {
-    position: absolute;
-    opacity: 1;
-    width: 350px;
-    height: 350px;
-  }
-}
-
-@media only screen and (min-width: 700px) {
   .carousel__wrapper {
+    position: relative;
     height: 650px;
+  }
+  .carousel__wrapper--card {
+    position: absolute;
+    opacity: 0.5;
+    width: 400px;
+    height: 350px;
+    bottom: 50px;
   }
   .carousel__track-container {
     height: 650px;
