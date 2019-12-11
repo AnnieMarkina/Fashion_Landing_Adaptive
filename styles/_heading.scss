@@ -105,7 +105,7 @@
             letter-spacing: 2px; 
 
             &:hover {
-                color: #904614; 
+                color: $links-hover-color; 
                 font-weight: 900;
                 transition: color 0.5s;
                 transition: font-weight 0.3s; 

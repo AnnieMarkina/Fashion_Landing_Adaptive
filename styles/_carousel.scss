@@ -1,0 +1,279 @@
+.carousel {
+    height: auto;
+
+    &__wrapper {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        margin: 0 auto; 
+        }
+
+    &__track-container {
+        height: 500px;
+        overflow: hidden;
+    }
+
+    &__track {
+        background: lightblue;
+        margin: 0; 
+        padding: 0;
+        list-style: none;
+        position: relative;
+        height: 100%;
+        transition: transform 0.5s ease-in;  
+    }
+
+    &__slide {
+        position: absolute;
+        width: 100%;
+        top: 0; 
+        bottom: 0;
+       
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 500px; 
+        }
+    }
+
+    &__button {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none; 
+        cursor: pointer;
+        background-color: transparent;
+        outline: none;
+
+        &--left {
+            left: 10px; 
+        }
+
+        &--right {
+            right: 10px; 
+        }
+    }
+
+    &__nav {
+        // padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        align-content: flex-end;
+        transform: translateY(-900%);
+    }
+
+    &__indicator {
+        margin-left: 20px;
+        background: #9d8345; 
+        border: 0; 
+        width: 65px; 
+        height: 2.5px; 
+        cursor: pointer;
+        z-index: 1;
+        outline: none;
+
+        &:hover {
+            background: #d4bc87; 
+            transition: color 0.8s; 
+        }
+    }
+
+    &__card {
+        width: 90%; 
+        background-color: black; 
+        color: rgba(255, 255, 255, 0.89); 
+        margin: -3px 0 0 0;
+        padding-top: 30px; 
+        padding-left: 55px;
+        height: 350px;
+
+        p {
+            text-transform: uppercase;
+            font-size: 12px; 
+            font-family: 'Roboto Slab', serif;
+            letter-spacing: 3px; 
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-family: 'Roboto Slab', serif;
+        }
+
+        #first-h2 {
+            font-family: 'Playfair Display', serif;
+            margin-top: 10px;
+            letter-spacing: 2px; 
+            font-size: 38px;
+        }
+
+        #second-h2 {
+            font-family: 'PT Sans', sans-serif;
+            font-style: italic;
+            margin-top: -20px;
+            letter-spacing: 2px; 
+            font-size: 30px;
+        }
+
+        a {
+            text-decoration: none; 
+            p {
+            color: $carousel__card-text; 
+            letter-spacing: 3px; 
+            text-transform: uppercase;
+            font-size: 17px;
+            font-weight: 100;
+            font-family: 'Roboto', sans-serif;
+
+            &:hover {
+                color: $links-hover-color; 
+                font-weight: 900;
+                transition: color 0.5s;
+                transition: font-weight 0.3s;
+            }
+            }
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 25px 95px;
+            cursor: pointer;
+            background-color: transparent;
+            border: 2px solid $carousel__card-text;
+
+            &:hover {
+                border: 2px solid $links-hover-color;
+                transition: border 0.3s;
+            }
+
+            a {
+                text-decoration: none;
+
+                p {
+                    margin: 0;
+                    padding: 0;
+                    color: $carousel__card-text; 
+                    letter-spacing: 3px; 
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    font-weight: 100;
+                    font-family: 'Roboto', sans-serif;
+
+                    &:hover {
+                        color: $links-hover-color; 
+                        font-weight: 900;
+                        transition: color 0.5s;
+                        transition: font-weight 0.3s;
+                }
+            }
+        }
+
+
+    }
+    }
+}
+
+.current-slide {
+    background: #d4bc87; 
+}
+
+@media only screen and (min-width: 700px) {
+    .carousel {
+
+        &__card {
+            position: absolute;
+            opacity: 1;
+            width: 350px;
+            height: 350px;
+        }
+    }
+}
+ 
+
+@media only screen and (min-width: 700px) {
+    .carousel {
+        &__wrapper {
+            height: 650px;
+        }
+    
+        &__track-container {
+            height: 650px;
+            overflow: hidden;
+        }
+    
+        &__track {
+            background: lightblue;
+            margin: 0; 
+            padding: 0;
+            list-style: none;
+            position: relative;
+            height: 100%;
+            transition: transform 0.5s ease-in;  
+        }
+    
+        &__slide {
+            position: absolute;
+            width: 100%;
+            top: 0; 
+            bottom: 0;
+           
+            img {
+                width: 100%;
+                object-fit: cover;
+                height: 700px; 
+            }
+        }
+    
+        &__button {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            transform: translateY(-50%);
+            border: none; 
+            cursor: pointer;
+            background-color: transparent;
+            outline: none;
+    
+            &--left {
+                left: 10px; 
+            }
+    
+            &--right {
+                right: 10px; 
+            }
+        }
+    
+        &__nav {
+            // padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            align-content: flex-end;
+            transform: translateY(-900%);
+        }
+    
+        &__indicator {
+            margin-left: 20px;
+            background: #9d8345; 
+            border: 0; 
+            // border-radius: 50%; 
+            width: 65px; 
+            height: 2.5px; 
+            cursor: pointer;
+            z-index: 1;
+            outline: none;
+    
+            &:hover {
+                background: #d4bc87; 
+                transition: color 0.8s; 
+            }
+        }
+    }
+    
+    .current-slide {
+        background: #d4bc87; 
+    }
+}

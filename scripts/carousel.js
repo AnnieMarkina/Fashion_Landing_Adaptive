@@ -12,7 +12,7 @@ const dots = Array.from(dotsNav.children);
 const slideWidth = slides[0].getBoundingClientRect().width;
 
 const setSlidePosition = (slide, index) => {
-    slide.style.left = slideWidth * index + 'px';
+    slide.style.left = `${window.innerWidth * index}px`;
 }
 slides.forEach(setSlidePosition);
 

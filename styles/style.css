@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans|Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400i&display=swap");
 .ad-banner {
   background-color: #eaebed;
   height: 30px;
@@ -182,12 +185,12 @@
 .carousel__wrapper {
   position: relative;
   width: 100%;
-  height: 650px;
+  height: 500px;
   margin: 0 auto;
 }
 
 .carousel__track-container {
-  height: 650px;
+  height: 500px;
   overflow: hidden;
 }
 
@@ -215,7 +218,7 @@
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 700px;
+  height: 500px;
 }
 
 .carousel__button {
@@ -272,8 +275,199 @@
   transition: color 0.8s;
 }
 
+.carousel__card {
+  width: 90%;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.89);
+  margin: -3px 0 0 0;
+  padding-top: 30px;
+  padding-left: 55px;
+  height: 350px;
+}
+
+.carousel__card p {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: 3px;
+}
+
+.carousel__card h2 {
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+}
+
+.carousel__card #first-h2 {
+  font-family: 'Playfair Display', serif;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  font-size: 38px;
+}
+
+.carousel__card #second-h2 {
+  font-family: 'PT Sans', sans-serif;
+  font-style: italic;
+  margin-top: -20px;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+.carousel__card a {
+  text-decoration: none;
+}
+
+.carousel__card a p {
+  color: rgba(255, 255, 255, 0.89);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
+}
+
+.carousel__card a p:hover {
+  color: #904614;
+  font-weight: 900;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  -webkit-transition: font-weight 0.3s;
+  transition: font-weight 0.3s;
+}
+
+.carousel__card button {
+  margin-top: 30px;
+  padding: 25px 95px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.89);
+}
+
+.carousel__card button:hover {
+  border: 2px solid #904614;
+  -webkit-transition: border 0.3s;
+  transition: border 0.3s;
+}
+
+.carousel__card button a {
+  text-decoration: none;
+}
+
+.carousel__card button a p {
+  margin: 0;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.89);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
+}
+
+.carousel__card button a p:hover {
+  color: #904614;
+  font-weight: 900;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  -webkit-transition: font-weight 0.3s;
+  transition: font-weight 0.3s;
+}
+
 .current-slide {
   background: #d4bc87;
+}
+
+@media only screen and (min-width: 700px) {
+  .carousel__card {
+    position: absolute;
+    opacity: 1;
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .carousel__wrapper {
+    height: 650px;
+  }
+  .carousel__track-container {
+    height: 650px;
+    overflow: hidden;
+  }
+  .carousel__track {
+    background: lightblue;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  .carousel__slide {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+  }
+  .carousel__slide img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 700px;
+  }
+  .carousel__button {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+  }
+  .carousel__button--left {
+    left: 10px;
+  }
+  .carousel__button--right {
+    right: 10px;
+  }
+  .carousel__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
+    -webkit-transform: translateY(-900%);
+            transform: translateY(-900%);
+  }
+  .carousel__indicator {
+    margin-left: 20px;
+    background: #9d8345;
+    border: 0;
+    width: 65px;
+    height: 2.5px;
+    cursor: pointer;
+    z-index: 1;
+    outline: none;
+  }
+  .carousel__indicator:hover {
+    background: #d4bc87;
+    -webkit-transition: color 0.8s;
+    transition: color 0.8s;
+  }
+  .current-slide {
+    background: #d4bc87;
+  }
 }
 
 body {
