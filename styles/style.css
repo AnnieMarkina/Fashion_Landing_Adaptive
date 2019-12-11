@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans&display=swap");
 .ad-banner {
   background-color: #eaebed;
   height: 30px;
@@ -46,6 +47,12 @@
     font-size: 13px;
     line-height: 20px;
     letter-spacing: 1px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .ad-banner__text {
+    font-size: 10px;
   }
 }
 
@@ -94,6 +101,25 @@
   height: 25px;
   widows: 25px;
   margin-top: 30px;
+}
+
+@media only screen and (max-width: 370px) {
+  .heading {
+    margin-top: -15px;
+    margin-bottom: -20px;
+  }
+  .heading__logo-icon {
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%);
+  }
+  .heading__logo-icon a {
+    letter-spacing: 2px;
+    font-size: 8px;
+  }
+  .heading img {
+    height: 15px;
+    widows: 15px;
+  }
 }
 
 @media only screen and (min-width: 1419px) {
@@ -197,6 +223,7 @@
   margin: -3px 0 0 0;
   padding-top: 30px;
   padding-left: 55px;
+  padding-right: 0;
   height: 350px;
 }
 
@@ -396,6 +423,37 @@
   .carousel__slide img {
     height: 700px;
   }
+}
+
+.two-photos__wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.two-photos__card {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.two-photos__card h3 {
+  margin-top: 40px;
+  color: black;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.two-photos__card p {
+  margin: 30px auto 40px;
+  color: #3a3a3a;
+  width: 90%;
+  letter-spacing: 3px;
+  font-size: 15px;
+  font-weight: 1000;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.6;
 }
 
 body {

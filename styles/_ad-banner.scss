@@ -45,3 +45,11 @@
         }
     }
 }
+
+@media only screen and (max-width: $mobile-width) {
+    .ad-banner {
+        &__text {
+            font-size: 10px; 
+        }
+    }
+}

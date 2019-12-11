@@ -41,6 +41,28 @@
     margin-top: 30px;
 }
 
+@media only screen and (max-width: $mobile-width) {
+    .heading {
+        margin-top: -15px;
+        margin-bottom: -20px;
+
+        &__logo-icon {
+            transform: translateY(25%);
+
+            a {
+                letter-spacing: 2px;  
+                font-size: 8px;
+                // transform: translateY(5%);
+            }
+        }
+    }
+
+    .heading img {
+        height: 15px;
+        widows: 15px; 
+    }
+}
+
 @media only screen and (min-width: $medium-screen-width) {
     .heading {
         &__menu-left { 
