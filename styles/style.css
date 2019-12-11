@@ -223,6 +223,8 @@
   margin: -3px 0 0 0;
   padding-top: 30px;
   padding-left: 55px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-right: 0;
   height: 350px;
 }
@@ -277,7 +279,8 @@
 }
 
 .carousel__wrapper--card button {
-  margin-top: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
   padding: 25px 95px;
   cursor: pointer;
   background-color: transparent;
@@ -404,7 +407,7 @@
   background: #d4bc87;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 600px) {
   .carousel__wrapper {
     position: relative;
     height: 650px;
@@ -412,7 +415,7 @@
   .carousel__wrapper--card {
     position: absolute;
     width: 400px;
-    height: 350px;
+    height: 370px;
     bottom: 50px;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
@@ -422,6 +425,32 @@
   }
   .carousel__slide img {
     height: 700px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .carousel__wrapper--card {
+    padding-top: 15px;
+    padding-left: 20px;
+    height: auto;
+  }
+  .carousel__wrapper--card p {
+    font-size: 10px;
+  }
+  .carousel__wrapper--card #first-h2 {
+    margin-top: 10px;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .carousel__wrapper--card #second-h2 {
+    font-size: 20px;
+  }
+  .carousel__wrapper--card a p {
+    font-size: 13px;
+  }
+  .carousel__wrapper--card button {
+    padding: 20px 55px;
   }
 }
 
