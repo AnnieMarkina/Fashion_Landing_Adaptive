@@ -193,7 +193,7 @@
   position: relative;
   width: 100%;
   background-color: black;
-  color: rgba(255, 255, 255, 0.89);
+  color: rgba(233, 230, 227, 0.89);
   margin: -3px 0 0 0;
   padding-top: 30px;
   padding-left: 55px;
@@ -232,7 +232,7 @@
 }
 
 .carousel__wrapper--card a p {
-  color: rgba(255, 255, 255, 0.89);
+  color: rgba(233, 230, 227, 0.89);
   letter-spacing: 3px;
   text-transform: uppercase;
   font-size: 17px;
@@ -254,7 +254,7 @@
   padding: 25px 95px;
   cursor: pointer;
   background-color: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.89);
+  border: 2px solid rgba(233, 230, 227, 0.89);
 }
 
 .carousel__wrapper--card button:hover {
@@ -270,7 +270,7 @@
 .carousel__wrapper--card button a p {
   margin: 0;
   padding: 0;
-  color: rgba(255, 255, 255, 0.89);
+  color: rgba(233, 230, 227, 0.89);
   letter-spacing: 3px;
   text-transform: uppercase;
   font-size: 15px;
@@ -384,89 +384,17 @@
   }
   .carousel__wrapper--card {
     position: absolute;
-    opacity: 0.5;
     width: 400px;
     height: 350px;
     bottom: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
   }
   .carousel__track-container {
     height: 650px;
-    overflow: hidden;
-  }
-  .carousel__track {
-    background: lightblue;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: relative;
-    height: 100%;
-    -webkit-transition: -webkit-transform 0.5s ease-in;
-    transition: -webkit-transform 0.5s ease-in;
-    transition: transform 0.5s ease-in;
-    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
-  }
-  .carousel__slide {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    bottom: 0;
   }
   .carousel__slide img {
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
     height: 700px;
-  }
-  .carousel__button {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-    outline: none;
-  }
-  .carousel__button--left {
-    left: 10px;
-  }
-  .carousel__button--right {
-    right: 10px;
-  }
-  .carousel__nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -ms-flex-line-pack: end;
-        align-content: flex-end;
-    -webkit-transform: translateY(-900%);
-            transform: translateY(-900%);
-  }
-  .carousel__indicator {
-    margin-left: 20px;
-    background: #9d8345;
-    border: 0;
-    width: 65px;
-    height: 2.5px;
-    cursor: pointer;
-    z-index: 1;
-    outline: none;
-  }
-  .carousel__indicator:hover {
-    background: #d4bc87;
-    -webkit-transition: color 0.8s;
-    transition: color 0.8s;
-  }
-  .current-slide {
-    background: #d4bc87;
   }
 }
 
