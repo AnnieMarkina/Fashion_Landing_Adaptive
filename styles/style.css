@@ -521,6 +521,11 @@
   text-align: left;
 }
 
+.three-photos__card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .three-photos__card a {
   margin-top: 20px;
   text-decoration: none;

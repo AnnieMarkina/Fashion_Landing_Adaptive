@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <script src="./scripts/carousel.js" defer></script>
 </head>
 
@@ -127,13 +129,15 @@
             <div class="two-photos__card">
                 <img src="./imgs/two-photos1.jpg" alt="">
                 <h3>Vivian Coat Check</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie nec tellus. Quisque eleifend, metus vitae pharetra.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie nec tellus. Quisque eleifend,
+                    metus vitae pharetra.</p>
             </div>
 
             <div class="two-photos__card">
                 <img src="./imgs/two-photos2.jpg" alt="">
                 <h3>RV Contrast Rib Tee</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie nec tellus. Quisque eleifend, metus vitae pharetra.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie nec tellus. Quisque eleifend,
+                    metus vitae pharetra.</p>
             </div>
         </div>
     </section>
@@ -145,7 +149,8 @@
                 <a href="javascript:void(0)">
                     <h3>Gowns</h3>
                 </a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie nec tellus. Quisque eleifend, metus vitae pharetra.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie nec tellus. Quisque eleifend,
+                    metus vitae pharetra.</p>
             </div>
 
             <div class="three-photos__card">
@@ -153,7 +158,8 @@
                 <a href="javascript:void(0)">
                     <h3>Dresses</h3>
                 </a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie nec tellus. Quisque eleifend, metus vitae pharetra.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie nec tellus. Quisque eleifend,
+                    metus vitae pharetra.</p>
             </div>
 
             <div class="three-photos__card">
@@ -161,10 +167,33 @@
                 <a href="javascript:void(0)">
                     <h3>Tops</h3>
                 </a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie nec tellus. Quisque eleifend, metus vitae pharetra.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie nec tellus. Quisque eleifend,
+                    metus vitae pharetra.</p>
             </div>
         </div>
     </section>
+
+    <section class="lastone">
+        <div><img src="./imgs/threephotos1.jpg" alt=""></div>
+        <div><img src="./imgs/threephotos1.jpg" alt=""></div>
+        <div><img src="./imgs/threephotos1.jpg" alt=""></div>
+    </section>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+  $('.lastone').slick({
+    dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  slide: '> div',
+  cssEase: 'linear',
+  });
+});
+    </script>
 </body>
 
 </html>
