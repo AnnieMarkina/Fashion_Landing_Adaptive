@@ -1,6 +1,5 @@
 .two-photos {
     &__wrapper {
-        // border: 1px solid red;
         margin: 0;
         padding: 0;
     }
@@ -36,6 +35,20 @@
     }
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 600px) {
+    .two-photos {
+        &__wrapper {
+            width: 90%;
+            margin: 60px auto 0;
+            display: flex; 
+            justify-content: space-between; 
+        }
 
+        &__card {
+            img {
+                width: 80%;
+            }
+        }
+            
+    }
 }
