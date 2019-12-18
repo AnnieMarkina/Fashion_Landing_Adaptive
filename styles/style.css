@@ -505,6 +505,7 @@
 
 .three-photos__wrapper {
   margin: 0 auto;
+  padding-bottom: -50px;
   padding: 0;
   width: 90%;
   display: -webkit-box;
@@ -514,6 +515,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: hidden;
+  background-color: pink;
 }
 
 .three-photos__card {
@@ -522,6 +524,8 @@
 }
 
 .three-photos__card img {
+  width: 100%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -532,6 +536,7 @@
 }
 
 .three-photos__card a h3 {
+  margin-bottom: 7px;
   color: black;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -549,11 +554,11 @@
 }
 
 .three-photos__card p {
-  margin: 10px auto 40px;
+  margin: 5px auto 20px;
   color: #3a3a3a;
   width: 100%;
   letter-spacing: 3px;
-  font-size: 15px;
+  font-size: 11px;
   font-weight: 1000;
   font-family: 'Fira Sans', sans-serif;
   line-height: 1.6;
