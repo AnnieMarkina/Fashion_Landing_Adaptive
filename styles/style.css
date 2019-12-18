@@ -568,14 +568,18 @@
   .three-photos__wrapper {
     width: 90%;
     margin: -10px auto 0;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .three-photos__card {
-    width: 70%;
+    width: 30%;
   }
   .three-photos__card img {
-    width: 90%;
+    width: 100%;
   }
   .three-photos__card p {
     margin: 5px auto 30px;
