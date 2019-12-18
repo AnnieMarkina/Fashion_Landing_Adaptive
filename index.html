@@ -173,7 +173,7 @@
         </div>
     </section>
 
-    <!-- <section class="lastone">
+    <!-- <section class="slider-test">
         <div><img src="./imgs/threephotos1.jpg"></div>
         <div><img src="./imgs/threephotos1.jpg"></div>
         <div><img src="./imgs/threephotos1.jpg"></div>
@@ -184,11 +184,25 @@
     <script type="text/javascript">
         $(document).on('ready', function () {
             $(".three-photos__wrapper").slick({
-                dots: true,
                 infinite: true,
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 0,
+                        settings: 'unslick',
+                    },
+                    {
+                        breakpoint: 769,
+                        settings: 'slick',
+                    }
+                ],
             });
+
+            $(window).on('resize', function () {
+                $('.three-photos__wrapper').slick('resize');
+            });
+
         });
     </script>
 </body>
