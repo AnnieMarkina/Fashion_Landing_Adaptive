@@ -185,16 +185,13 @@
         $(document).on('ready', function () {
             $(".three-photos__wrapper").slick({
                 infinite: true,
+                mobileFirst: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 responsive: [
                     {
-                        breakpoint: 0,
+                        breakpoint: 800,
                         settings: 'unslick',
-                    },
-                    {
-                        breakpoint: 769,
-                        settings: 'slick',
                     }
                 ],
             });
