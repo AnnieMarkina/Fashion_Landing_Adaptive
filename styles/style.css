@@ -515,7 +515,6 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: hidden;
-  background-color: pink;
 }
 
 .three-photos__card {
