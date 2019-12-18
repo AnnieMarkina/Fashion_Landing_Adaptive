@@ -173,22 +173,21 @@
         </div>
     </section>
 
-    <section class="lastone">
+    <!-- <section class="lastone">
         <div><img src="./imgs/threephotos1.jpg"></div>
         <div><img src="./imgs/threephotos1.jpg"></div>
         <div><img src="./imgs/threephotos1.jpg"></div>
-    </section>
+    </section> -->
 
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
-        $(document).on('ready', function() {
-            $(".lastone").slick({
+        $(document).on('ready', function () {
+            $(".three-photos__wrapper").slick({
                 dots: true,
-                vertical: true,
-                centerMode: true,
-                slidesToShow: 4,
-                slidesToScroll: 3
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
             });
         });
     </script>
