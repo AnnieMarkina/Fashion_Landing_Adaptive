@@ -4,7 +4,7 @@
     "sources": [
         "style.scss",
         "_vars.scss",
-        "_ad-banner.scss",
+        "_adbanner.scss",
         "_heading.scss",
         "_carousel.scss",
         "_twophotos.scss",
