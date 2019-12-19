@@ -684,6 +684,23 @@
   width: 260px;
   height: 70px;
   background-color: rgba(216, 216, 216, 0.623);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.payment__item:hover {
+  cursor: pointer;
+  background-color: rgba(243, 215, 219, 0.637);
+  -webkit-transition: background-color 0.7s;
+  transition: background-color 0.7s;
 }
 
 .payment__item img {
@@ -702,7 +719,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
   .payment {
     width: 90%;
     margin: 0 auto;
@@ -711,6 +728,8 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;

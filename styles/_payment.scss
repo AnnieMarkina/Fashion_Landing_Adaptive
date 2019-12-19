@@ -5,6 +5,16 @@
         width: 260px; 
         height: 70px;
         background-color: $border-color; 
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+
+        &:hover {
+            cursor: pointer;
+            background-color: rgba(243, 215, 219, 0.637); 
+            transition: background-color 0.7s; 
+        }
 
         img {
             width: 22px; 
@@ -25,13 +35,14 @@
 }
 
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
     .payment {
         width: 90%; 
         margin: 0 auto;
         margin-top: 50px; 
         margin-bottom: 50px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
 
 
