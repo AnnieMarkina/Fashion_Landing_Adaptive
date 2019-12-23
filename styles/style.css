@@ -736,6 +736,35 @@
   }
 }
 
+.footer__wrapper {
+  margin-top: 50px;
+}
+
+.footer__menu-block h4 {
+  text-align: left;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer__menu-block--list a {
+  text-decoration: none;
+}
+
+.footer__menu-block--list a span {
+  text-align: left;
+  color: #3a3a3a;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: 1000;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.6;
+}
+
 .bottom {
   margin-top: 100px;
   border: 1px solid pink;

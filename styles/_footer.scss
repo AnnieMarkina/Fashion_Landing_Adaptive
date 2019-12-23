@@ -1,0 +1,37 @@
+.footer {
+    &__wrapper {
+        margin-top: 50px;
+    }
+
+    &__menu-block {
+        h4 {
+            // margin-top: 40px;
+            text-align: left;
+            text-transform: uppercase;
+            color: black;
+            letter-spacing: 3px; 
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 900;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        &--list {
+            a {
+                text-decoration: none; 
+
+                span {
+                    text-align: left;
+                    // margin: 30px auto 40px; 
+                    color: rgb(58, 58, 58);
+                    // width: 90%;
+                    letter-spacing: 3px; 
+                    font-size: 14px;
+                    font-weight: 1000;
+                    font-family: 'Fira Sans', sans-serif;
+                    line-height: 1.6;
+                }
+            }
+        }
+    }
+}
