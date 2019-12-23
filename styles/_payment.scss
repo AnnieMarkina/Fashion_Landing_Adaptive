@@ -12,7 +12,7 @@
 
         &:hover {
             cursor: pointer;
-            background-color: rgba(243, 215, 219, 0.637); 
+            background-color: $blocks-hover-color; 
             transition: background-color 0.7s; 
         }
 
