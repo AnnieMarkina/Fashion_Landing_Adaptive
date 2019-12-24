@@ -6,7 +6,6 @@ let hiddenElements = document.querySelectorAll('.footer__menu-children');
 dropdown.forEach(el => {
     el.addEventListener('mouseover', function() {
         let child = el.nextElementSibling;
-        console.log(child);
         child.classList.add('active');
     })
 });
@@ -14,7 +13,6 @@ dropdown.forEach(el => {
 dropdown.forEach(el => {
     el.addEventListener('mouseout', function() {
         let child = el.nextElementSibling;
-        console.log(child);
         child.classList.remove('active');
     })
 });
@@ -22,5 +20,11 @@ dropdown.forEach(el => {
 hiddenElements.forEach(el => {
     el.addEventListener('mouseover', function() {
         el.classList.add('active');
+    })
+});
+
+hiddenElements.forEach(el => {
+    el.addEventListener('mouseout', function() {
+        el.classList.remove('active');
     })
 });
