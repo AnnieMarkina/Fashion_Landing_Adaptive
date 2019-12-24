@@ -758,23 +758,6 @@
 
 .footer__menu-children {
   display: none;
-  background-color: rgba(216, 216, 216, 0.623);
-  padding-left: 22px;
-  padding: 10px 0;
-}
-
-.footer__menu-children a {
-  text-decoration: none;
-}
-
-.footer__menu-children a span {
-  text-align: left;
-  color: #3a3a3a;
-  letter-spacing: 3px;
-  font-size: 14px;
-  font-weight: 1000;
-  font-family: 'Fira Sans', sans-serif;
-  line-height: 1.6;
 }
 
 .footer__menu-children.active {
@@ -785,6 +768,36 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: rgba(216, 216, 216, 0.623);
+  padding: 10px 22px;
+}
+
+.footer__menu-children.active a {
+  text-decoration: none;
+  padding: 10px 25px 10px 25px;
+}
+
+.footer__menu-children.active a span {
+  text-align: left;
+  color: #3a3a3a;
+  letter-spacing: 3px;
+  font-size: 16px;
+  font-weight: 1000;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.6;
+}
+
+.footer__menu-children.active a span:hover {
+  color: white;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+.footer__menu-children.active a:hover {
+  cursor: pointer;
+  background-color: #dbaf92bb;
+  -webkit-transition: background-color 0.7s;
+  transition: background-color 0.7s;
 }
 
 .footer__menu-dropdown {
@@ -818,33 +831,33 @@
   transition: background-color 0.7s;
 }
 
-.footer__menu-dropdown #button {
-  display: block;
-  margin: 20px auto;
-  border: 1px solid black;
-  background-color: transparent;
-  padding: 5px 50px;
-  text-decoration: none;
-  display: block;
-  font-size: 16px;
-  cursor: pointer;
+@media only screen and (min-width: 800px) {
+  .footer__menu-children.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-right: 22px;
+  }
 }
 
-.footer__menu-dropdown #button h4 {
-  padding: 0px;
-}
-
-.footer__menu-newsletter {
-  margin-top: 0;
-  background-color: rgba(216, 216, 216, 0.623);
-}
-
-.footer__menu-newsletter h4 {
-  padding-top: 20px;
+.contacts h4 {
   text-align: center;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
 }
 
-.footer__menu-newsletter p {
+.contacts p {
   margin: 0 auto;
   text-align: center;
   color: #3a3a3a;
@@ -856,42 +869,55 @@
   line-height: 1.6;
 }
 
-.footer__menu-newsletter .form-inputs {
-  margin: 17px auto;
+.contacts__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
 }
 
-.footer__menu-newsletter .form-inputs .text-input {
-  border: none;
-  width: 240px;
-  height: 40px;
+.contacts__button {
+  margin-top: 20px;
 }
 
-.footer__menu-newsletter .form-inputs .sumbit-input {
-  margin: 0;
+.contacts__button #contact-button {
+  width: 250px;
+  height: 60px;
+  margin: 20px auto;
+  border: 1px solid black;
+  text-decoration: none;
+  font-size: 16px;
   background-color: transparent;
-  border: none;
-  width: 40px;
-  height: 40px;
-  background-image: url("./imgs/send-icon.svg") no-repeat center center;
-  background-position: 0px 0px;
-  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
-.footer__menu-icons {
+.contacts__button #contact-button h4 {
+  text-align: center;
+  padding: 0px;
+}
+
+.contacts__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 35%;
+  width: 100px;
   margin: 0 auto;
   margin-bottom: 10px;
 }
 
-.footer__menu-icons a img {
-  width: 15px;
-  height: 15px;
+.contacts__icons img {
+  width: 20px;
+  height: 20px;
 }
 
 .bottom {
@@ -960,5 +986,9 @@
 
 body {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

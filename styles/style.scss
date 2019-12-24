@@ -14,8 +14,13 @@
 @import "./boutique";
 @import "./payment";
 @import "./footer";
+@import "./contacts"; 
 @import "./bottom";
 
 body {
     margin: 0;
+}
+
+a {
+    text-decoration: none; 
 }
