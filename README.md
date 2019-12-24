@@ -7,5 +7,6 @@
 * Adaptive markup (please resize)
 * HTML/CSS/SASS
 * JS Carousel
-* Gulp
+* JS multi-level menu
 * Slick-slider
+* Gulp
