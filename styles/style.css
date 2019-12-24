@@ -881,6 +881,8 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #dbaf92bb;
 }
 
 .contacts__button {
@@ -903,6 +905,71 @@
   padding: 0px;
 }
 
+.contacts__newsletter .form__wrapper {
+  text-align: center;
+}
+
+.contacts__newsletter input[type=text] {
+  margin: 30px auto 10px;
+  width: 220px;
+  height: 40px;
+  border: 1px solid rgba(216, 216, 216, 0.623);
+}
+
+.contacts__newsletter input[type=text]::-webkit-input-placeholder {
+  text-align: left;
+  padding-left: 15px;
+  color: #3a3a3a;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 1000;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.6;
+}
+
+.contacts__newsletter input[type=text]:-ms-input-placeholder {
+  text-align: left;
+  padding-left: 15px;
+  color: #3a3a3a;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 1000;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.6;
+}
+
+.contacts__newsletter input[type=text]::-ms-input-placeholder {
+  text-align: left;
+  padding-left: 15px;
+  color: #3a3a3a;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 1000;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.6;
+}
+
+.contacts__newsletter input[type=text]::placeholder {
+  text-align: left;
+  padding-left: 15px;
+  color: #3a3a3a;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 1000;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.6;
+}
+
+.contacts__newsletter input[type=submit] {
+  cursor: pointer;
+  background-image: url("./imgs/send-icon.svg") no-repeat center center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  color: transparent;
+  background-color: white;
+}
+
 .contacts__icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -918,6 +985,58 @@
 .contacts__icons img {
   width: 20px;
   height: 20px;
+}
+
+@media only screen and (min-width: 800px) {
+  .contacts__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 auto;
+    width: 80%;
+    height: 350px;
+  }
+  .contacts__button {
+    width: 30%;
+  }
+  .contacts__newsletter {
+    width: 40%;
+  }
+  .contacts__newsletter h4 {
+    text-align: left;
+  }
+  .contacts__newsletter p {
+    text-align: left;
+    margin-left: 0px;
+  }
+  .contacts__newsletter .form__wrapper {
+    text-align: left;
+  }
+  .contacts__icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0;
+    margin-top: -10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
+  .contacts__icons img {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .bottom {
