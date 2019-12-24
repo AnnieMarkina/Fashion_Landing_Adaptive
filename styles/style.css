@@ -756,24 +756,6 @@
   width: 100%;
 }
 
-.footer__menu-children {
-  display: none;
-}
-
-.footer__menu-children a {
-  text-decoration: none;
-}
-
-.footer__menu-children a span {
-  text-align: left;
-  color: #3a3a3a;
-  letter-spacing: 3px;
-  font-size: 14px;
-  font-weight: 1000;
-  font-family: 'Fira Sans', sans-serif;
-  line-height: 1.6;
-}
-
 .footer__menu-dropdown {
   background-color: rgba(216, 216, 216, 0.623);
   display: -webkit-box;
@@ -831,6 +813,27 @@
   padding: 0px;
 }
 
+.footer__menu-children {
+  display: none;
+  background-color: rgba(216, 216, 216, 0.623);
+  padding-left: 22px;
+  padding: 10px 0;
+}
+
+.footer__menu-children a {
+  text-decoration: none;
+}
+
+.footer__menu-children a span {
+  text-align: left;
+  color: #3a3a3a;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: 1000;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.6;
+}
+
 .footer__menu-newsletter {
   margin-top: 0;
   background-color: rgba(216, 216, 216, 0.623);
@@ -854,11 +857,10 @@
 }
 
 .footer__menu-newsletter .form-inputs {
-  margin: 0 auto;
+  margin: 17px auto;
 }
 
 .footer__menu-newsletter .form-inputs .text-input {
-  margin: 0 auto;
   border: none;
   width: 240px;
   height: 40px;
@@ -893,10 +895,8 @@
 }
 
 .bottom {
-  margin-top: 100px;
-  border: 1px solid pink;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -904,13 +904,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .bottom span {
-  border: 1px solid green;
   text-align: center;
   text-transform: uppercase;
   color: black;
@@ -922,8 +920,6 @@
 }
 
 .bottom__logos {
-  border: 1px solid red;
-  width: 40%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -936,6 +932,30 @@
 .bottom__logos img {
   width: 100px;
   height: 45px;
+}
+
+@media only screen and (min-width: 600px) {
+  .bottom {
+    border: 1px solid yellow;
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .bottom span {
+    border: 1px solid red;
+    top: 10px;
+  }
+  .bottom__logos {
+    border: 1px solid red;
+  }
 }
 
 body {
