@@ -18,6 +18,31 @@
         margin: 0; 
         width: 100%;
 
+        &-children {
+            display: none;
+            background-color: $border-color;
+            padding-left: 22px; 
+            padding: 10px 0; 
+    
+            a {
+                text-decoration: none; 
+                span {
+                    text-align: left; 
+                    color: rgb(58, 58, 58);
+                    letter-spacing: 3px; 
+                    font-size: 14px;
+                    font-weight: 1000;
+                    font-family: 'Fira Sans', sans-serif;
+                    line-height: 1.6;
+                }
+            }
+        }
+
+        &-children.active {
+            display: flex;
+            flex-direction: column;
+        }
+
         &-dropdown {
             background-color: $border-color; 
             display: flex;
@@ -43,10 +68,10 @@
                 transition: background-color 0.7s;                 
             }
 
-            &:active ~ .footer__menu-children {
-                display: flex;
-                flex-direction: column;
-        }  
+        //     &:active ~ .footer__menu-children {
+        //         display: flex;
+        //         flex-direction: column;
+        // }  
         
         #button {
             display: block;
@@ -65,27 +90,7 @@
         }
     }
 
-    &-children {
-        display: none;
-        background-color: $border-color;
-        padding-left: 22px; 
-        padding: 10px 0; 
-
-        a {
-            text-decoration: none; 
-            span {
-                text-align: left; 
-                color: rgb(58, 58, 58);
-                letter-spacing: 3px; 
-                font-size: 14px;
-                font-weight: 1000;
-                font-family: 'Fira Sans', sans-serif;
-                line-height: 1.6;
-            }
-        }
-    }
-
-    &-newsletter {
+        &-newsletter {
         margin-top: 0;
         background-color: $border-color;
 
@@ -129,7 +134,7 @@
         }
     }
 
-    &-icons {
+        &-icons {
         display: flex;
         justify-content: space-between;
         width: 35%; 
@@ -146,18 +151,6 @@
 }
 }
 
-// @media only screen and (min-width: 800px) {
-//     .footer {
-//         &__wrapper {
-//             display: grid;
-//         }
 
-//         &__menu {
-//             &-children {
-//                 display: flex; 
-//                 flex-direction: column; 
-//                 flex-wrap: wrap; 
-//             }
-//         }
-//     }
-// }
+
+// @media only screen and (min-width: 800px)
