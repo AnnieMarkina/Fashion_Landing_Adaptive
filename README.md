@@ -1,5 +1,3 @@
-# working on minor improvements
-
 [Project Preview](https://anniemarkina.github.io/Fashion_Landing_Adaptive/)
 
 **Used:**
